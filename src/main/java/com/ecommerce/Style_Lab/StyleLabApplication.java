@@ -9,5 +9,4 @@ public class StyleLabApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(StyleLabApplication.class, args);
 	}
-
 }
