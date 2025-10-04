@@ -1,19 +1,27 @@
 package com.ecommerce.Style_Lab.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
 @Entity
+@Table(name = "tb_usuario")
+@AllArgsConstructor
+@NoArgsConstructor
 public class UsuarioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer cdUsuario;
 
+
+    @Column(unique = true, nullable = false)
     private String nmClinte;
 
+
+    @Column(unique = true, nullable = false)
     private String nuCpf;
 
     private String nuRg;
