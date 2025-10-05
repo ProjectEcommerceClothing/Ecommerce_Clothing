@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/produtos")
 public class ProdutoController {
     private final ProdutoService produtoService;
 
@@ -17,7 +17,7 @@ public class ProdutoController {
         this.produtoService = produtoService;
     }
 
-    @GetMapping("/produtos")
+    @GetMapping
     public List<ProdutoModel> listarProduto(){
         return produtoService.listarProdutos();
     }

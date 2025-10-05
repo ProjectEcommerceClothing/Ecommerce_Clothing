@@ -5,9 +5,9 @@ public record UsuarioDto(
         String nmCliente,
         String nuCpf,
         String nuRg,
-        Integer nuTelefone,
+        String nuTelefone,
         String dsEndereco,
         String nuEndereco,
         String flAtivo
-) {
-}
+)
+{}

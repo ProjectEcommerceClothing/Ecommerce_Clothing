@@ -30,10 +30,11 @@ public class UsuarioService {
         usuarioM.setNmClinte(usuario.nmCliente());
         usuarioM.setNuCpf(usuario.nuCpf());
         usuarioM.setNuRg(usuario.nuRg());
-        usuarioM.setNuRg(usuario.nuRg());
+        usuarioM.setNuTelefone(usuario.nuTelefone());
         usuarioM.setDsEndereco(usuario.dsEndereco());
         usuarioM.setNuEndereco(usuario.nuEndereco());
         usuarioM.setFlAtivo(usuario.flAtivo());
+
         return repositorioUsuario.save(usuarioM);
     }
 
